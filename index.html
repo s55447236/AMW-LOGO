@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMW CYBERTECH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar fade-up" id="navbar">
+    <div class="logo">
+      <span class="logo-icon" style="display:inline-block;position:relative;width:100px;height:100px;">
+        <span style="position:absolute;left:0;top:0;width:100px;height:100px;display:block;z-index:2;">
+          <!-- zimu.svg -->
+          <svg width="100" height="100" viewBox="0 0 268 252" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100px;height:100px;">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M93.4307 159.676H82.0957L79.2188 150.514H64.1494L61.2783 159.676H49.9434L64.666 116.039H78.708L93.4307 159.676ZM66.6592 142.503H76.7041L71.8467 127.034H71.5059L66.6592 142.503Z" fill="black"/>
+            <path d="M122.27 143.057H122.78L133.86 116.039H146.921V159.676H136.651V132.872H136.289L125.807 159.398H119.244L108.761 132.723H108.398V159.676H98.1289V116.039H111.189L122.27 143.057Z" fill="black"/>
+            <path d="M169.501 144.633H169.863L177.385 116.039H186.888L194.409 144.697H194.771L201.376 116.039H213.01L200.332 159.676H190.169L182.307 133.213H181.966L174.104 159.676H163.962L151.263 116.039H162.918L169.501 144.633Z" fill="black"/>
+          </svg>
+        </span>
+        <span style="position:absolute;left:0;top:0;width:100px;height:100px;display:block;z-index:3;pointer-events:none;">
+          <!-- line.svg，添加旋转动画 -->
+          <svg class="rotating-line" width="100" height="100" viewBox="0 0 268 252" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100px;height:100px;">
+            <path d="M249.557 126.767L181.551 215.863L35.2092 202.519L22.2094 110.199L150.561 26.4797L249.557 126.767ZM28.6826 113.139L40.4878 196.976L178.793 209.587L241.623 127.271L149.733 34.1823L28.6826 113.139Z" fill="black"/>
+          </svg>
+        </span>
+      </span>
+    </div>
+    <div class="nav-links">
+      <a href="#about" id="nav-about">About</a>
+      <a href="#services" id="nav-services">Services</a>
+      <a href="#technology" id="nav-technology">Technology</a>
+      <a href="#contact" id="nav-contact">Contact</a>
+      <button class="lang-switch" id="lang-switch">cn/en</button>
+    </div>
+  </nav>
+  <main class="main">
+    <div class="main-title fade-up" id="main-title">Technology for<br>Southeast Asia</div>
+    <div class="main-desc fade-up" id="main-desc">
+      AMW CYBERTECH is an innovative technology company focusing on artificial intelligence, big data, and cybersecurity development, driving digital transformation across Southeast Asia.
+    </div>
+    <div class="main-btns fade-up" id="main-btns">
+      <button class="primary" id="btn-services">Our Services</button>
+      <button id="btn-learn">Learn More</button>
+    </div>
+  </main>
+  <hr class="footer-line fade-up" id="footer-line">
+  <div style="text-align:center;margin:40px 0;">
+    <div id="logo-segment" style="display:inline-flex;border:1px solid #bbb;border-radius:8px;overflow:hidden;">
+      <button class="logo-seg-btn active" data-style="style1" style="padding:10px 24px;font-size:1rem;border:none;background:#fff;outline:none;cursor:pointer;">样式1</button>
+      <button class="logo-seg-btn" data-style="style2" style="padding:10px 24px;font-size:1rem;border:none;background:#fff;outline:none;cursor:pointer;">样式2</button>
+      <button class="logo-seg-btn" data-style="style3" style="padding:10px 24px;font-size:1rem;border:none;background:#fff;outline:none;cursor:pointer;">样式3</button>
+      <button class="logo-seg-btn" data-style="style4" style="padding:10px 24px;font-size:1rem;border:none;background:#fff;outline:none;cursor:pointer;">样式4</button>
+      <button class="logo-seg-btn" data-style="style5" style="padding:10px 24px;font-size:1rem;border:none;background:#fff;outline:none;cursor:pointer;">样式5</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    // 页面加载动画
+    window.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.navbar').forEach((el, i) => setTimeout(() => el.classList.add('show'), 100 + i*100));
+      document.querySelectorAll('.main-title').forEach((el, i) => setTimeout(() => el.classList.add('show'), 300 + i*100));
+      document.querySelectorAll('.main-desc').forEach((el, i) => setTimeout(() => el.classList.add('show'), 500 + i*100));
+      document.querySelectorAll('.main-btns').forEach((el, i) => setTimeout(() => el.classList.add('show'), 700 + i*100));
+      document.querySelectorAll('.footer-line').forEach((el, i) => setTimeout(() => el.classList.add('show'), 900 + i*100));
+    });
+  </script>
+</body>
+</html>
